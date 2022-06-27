@@ -27,7 +27,7 @@ def recode_string_to_utf8(s: Union[str, MetadataItem]) -> Union[str, MetadataIte
 
 
 def recode_one_file(file: music_tag.id3.Mp3File) -> None:
-    """Recodes mp3 file text tags.
+    """Recodes mp3-file text tags.
 
     :param file: opened MP3 file descriptor
     """
@@ -44,7 +44,7 @@ def recode_one_file(file: music_tag.id3.Mp3File) -> None:
 
 
 def recode_tags(base_path) -> None:
-    """Changes file permissions to read/write and recodes all text tags in non-ascii named files into "UTF-8".
+    """Changes file permissions to read/write/execute and recodes all text tags in non-ascii named mp3-files into "UTF-8".
 
     :param base_path: absolute path to a root directory with mp3-collection
     """
